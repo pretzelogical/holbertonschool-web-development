@@ -1,12 +1,12 @@
-@font-face {
-  font-family: Coiny;
-  src: url(./font/Coiny-Regular.ttf);
-}
-
 body {
   font-family: Source sans pro;
   margin: 0;
   /* box-sizing: border-box; */
+}
+
+.purpEmphasis {
+  color: #C271FF;
+  font-weight: bold;
 }
 
 /* Header and hero */
@@ -52,13 +52,6 @@ a.logoLink {
   margin-left: 10%;
 }
 
-a.logoLink p {
-  font-size: 14px;
-  color: white;
-  font-family: Coiny, 'Courier New', Courier, monospace;
-  margin: 4%;
-}
-
 img.smileLogo {
   width: 30px;
   height: 30px;
@@ -79,4 +72,57 @@ section.hero p {
   word-spacing: 3rem;
   font-weight: bold;
   margin-top: 0;
+}
+
+section.hero button {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 24px;
+  font-size: 11px;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.66);
+}
+
+section.banner {
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.banner h2 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+div.proCardDisplay {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  place-content: center;
+  width: 80%;
+}
+
+div.proCardDisplay img {
+  max-height: 150px;
+  max-width: 150px;
+  border-radius: 100%;
+}
+
+div.proCard {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.proCard h3 {
+  margin-bottom: 2%;
+}
+
+div.proCard p {
+  margin: 0;
+  font-style: italic;
 }
