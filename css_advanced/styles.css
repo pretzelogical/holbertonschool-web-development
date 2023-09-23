@@ -1,0 +1,82 @@
+@font-face {
+  font-family: Coiny;
+  src: url(./font/Coiny-Regular.ttf);
+}
+
+body {
+  font-family: Source sans pro;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+/* Header and hero */
+
+header {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  /* flex-flow: row; */
+  align-items: center;
+  justify-content: space-between;
+  border: solid 2px red;
+  width: 80%;
+  max-width: 30vw;
+  height: 80%;
+  justify-self: end;
+  margin-right: 8%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+a.logoLink {
+  display: grid;
+  justify-self: start;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  text-decoration: none;
+  column-gap: 6%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+a.logoLink p {
+  font-size: 14px;
+  color: white;
+  font-family: Coiny, 'Courier New', Courier, monospace;
+  margin: 4%;
+}
+
+img.smileLogo {
+  width: 30px;
+  height: 30px;
+}
+
+section.hero {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+section.hero h1 {
+  font-size: 85px;
+  margin-bottom: 0;
+}
+
+section.hero p {
+  word-spacing: 3rem;
+  font-weight: bold;
+  margin-top: 0;
+}
