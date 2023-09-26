@@ -15,6 +15,28 @@ body {
   font-weight: bold;
 }
 
+h2 {
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.whiteText {
+  color: white;
+}
+
+button {
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 60px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #c981ff;
+}
+
 /* Header and hero */
 
 header {
@@ -43,9 +65,6 @@ header nav a {
   font-weight: bold;
 }
 
-.whiteText {
-  color: white;
-}
 
 a.logoLink {
   display: grid;
@@ -86,17 +105,7 @@ section.hero p {
 }
 
 section.hero button {
-  background-color: #C271FF;
-  color: white;
-  border: none;
-  padding: 20px;
-  border-radius: 60px;
-  font-size: 18px;
   box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.66);
-}
-
-section.hero button:hover {
-  background-color: #c981ff;
 }
 
 section.banner {
@@ -107,9 +116,8 @@ section.banner {
   justify-content: center;
 }
 
+
 section.banner h2 {
-  font-weight: lighter;
-  font-size: 30px;
   text-align: center;
 }
 
@@ -170,7 +178,7 @@ section.videos {
   display: flex;
   flex-flow: column;
   background-color: white;
-  padding-top: 6%;
+  padding: 8% 0;
 }
 
 section.videos h2 {
@@ -200,7 +208,7 @@ div.video {
   grid-template-columns: 1fr 1fr;
   min-height: 0;
   min-width: 0;
-  margin: 0 0.4%;
+  margin: 0.8%;
 }
 
 div.video img {
@@ -253,4 +261,47 @@ div.video p,
 div.video div.videoRating,
 div.video h3 {
   padding: 0 8%;
+}
+
+/* Memberships */
+
+section.memberships {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+section.memberships h3 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 36px;
+  margin: 4%;
+}
+
+section.memberships div.membershipInfoDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+  padding: 4%;
+}
+
+div.membershipInfo {
+  text-align: center;
+}
+
+div.membershipInfo h4 {
+  margin: 4% 0;
+}
+
+div.membershipInfo p {
+  max-width: 230px;
+}
+
+section.memberships button {
+  text-align: center;
+  width: fit-content;
+  font-size: 18px;
 }
