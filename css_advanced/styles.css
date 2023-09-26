@@ -341,5 +341,41 @@ div.faqCard {
 }
 
 div.faqCard p {
-  color: #979fab;
+  color: #00000096;
+}
+
+/* Footer */
+
+footer {
+  padding: 2%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+footer div.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+
+div.footerLinks a {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  max-width: fit-content;
+  column-gap: 8%;
+}
+
+div.socialLinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10%;
+}
+
+footer p {
+  /* margin-top: 10%; */
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff96;
 }
